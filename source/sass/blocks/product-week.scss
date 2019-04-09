@@ -1,7 +1,21 @@
 .product-week {
+  position: relative;
   width: 100%;
   padding: 28px 30px 42px 30px;
   box-sizing: border-box;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom:0;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-position: center bottom;
+    background-size: 300px 6px;
+  }
 }
 
 .product-week__title {
@@ -23,4 +37,46 @@
 .product-week__description {
   font-size: 15px;
   font-weight: normal;
+}
+
+.product-week__list {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 28px;
+}
+
+.list-parameters__name {
+  border-bottom: 1px solid #ececec;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: normal;
+  padding: 10px 0;
+}
+
+.list-parameters__value {
+  border-bottom: 1px solid #ececec;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: normal;
+}
+
+.product-week__wrapper-image {
+  width: 260px;
+}
+
+.product-week__text-price {
+  text-align: center;
+}
+
+.product-week__link {
+  display: block;
+  min-width: 259px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $color;
+  line-height: 20px;
+  box-sizing: border-box;
+  padding: 15px 83px;
+  text-align: center;
+  border: 1px solid black;
 }
