@@ -1,0 +1,110 @@
+.about-us {
+  padding: 28px 30px 42px 30px;
+}
+
+.about-us__title {
+  font-size: 25px;
+  line-height: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+
+.about-us__list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 80px;
+}
+
+.about-us__description {
+  margin: 0;
+  padding: 0;
+}
+
+.about-us__items {
+  position: relative;
+  margin-bottom: 80px;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.about-us__description--materials::before {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 37px;
+  top: -50px;
+  left: 8px;
+  background-image: url("../img/icon-feature-flower.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.about-us__description--price::before {
+  content: "";
+  position: absolute;
+  width: 47px;
+  height: 27px;
+  top: -50px;
+  background-image: url("../img/icon-feature-money.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.about-us__description--like::before {
+  content: "";
+  position: absolute;
+  width: 34px;
+  height: 28px;
+  top: -50px;
+  left: 7px;
+  background-image: url("../img/icon-feature-heart.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.about-us__description--handwork::before {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 34px;
+  top: -50px;
+  left: 3px;
+  background-image: url("../img/icon-feature-ball.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.about-us__description--aid::before {
+  content: "";
+  position: absolute;
+  width: 55px;
+  height: 23px;
+  top: -50px;
+  left: -6px;
+  background-image: url("../img/icon-feature-rocket.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.about-us__description--box::before {
+  content: "";
+  position: absolute;
+  width: 33px;
+  height: 32px;
+  top: -50px;
+  left: 3px;
+  background-image: url("../img/icon-feature-gift.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
