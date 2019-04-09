@@ -6,8 +6,8 @@
 @import "blocks/product-week.scss";
 @import "blocks/about-us.scss";
 @import "blocks/page-footer.scss";
-
-
+@import "blocks/advert.scss";
+@import "blocks/catalog.scss";
 @font-face {
   font-family: "Open Sans";
   src: url("../fonts/opensans.woff") format("woff"),
@@ -28,6 +28,7 @@
 img {
   max-width: 100%;
   height: auto;
+  display: block;
 }
 
 body {
