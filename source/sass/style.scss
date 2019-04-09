@@ -1,54 +1,15 @@
-@import "variables.scss";
-@import "normalize.scss";
-@import "blocks/page-header.scss";
-@import "blocks/main-nav.scss";
-@import "blocks/greeting.scss";
-@import "blocks/product-week.scss";
-@import "blocks/about-us.scss";
-@import "blocks/page-footer.scss";
-@import "blocks/advert.scss";
-@import "blocks/catalog.scss";
-
-@font-face {
-  font-family: "Open Sans";
-  src: url("../fonts/opensans.woff") format("woff"), url("../fonts/opensans.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Open Sans";
-  src: url("../fonts/opensansbold.woff") format("woff"), url("../fonts/opensansbold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-body {
-  font-family: "Open Sans", sans-serif;
-  font-size: $size;
-  line-height: 24px;
-  font-weight: bold;
-  color: $color;
-  background-color: $background;
-}
-
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0, 0, 0, 0);
-  overflow: hidden;
-}
+@import "normalize";
+@import "variables";
+@import "global";
+@import "visually-hidden";
+@import "fonts.scss";
+@import "blocks/page-header";
+@import "blocks/main-nav";
+@import "blocks/greeting";
+@import "blocks/categories-list";
+@import "blocks/product-week";
+@import "blocks/list-parameters";
+@import "blocks/about-us";
+// @import "blocks/page-footer";
+// @import "blocks/advert";
+// @import "blocks/catalog";

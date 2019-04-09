@@ -1,0 +1,20 @@
+.list-parameters {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 28px;
+}
+
+.list-parameters__name {
+  border-bottom: 1px solid #ececec;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: normal;
+  padding: 10px 0;
+}
+
+.list-parameters__value {
+  border-bottom: 1px solid #ececec;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: normal;
+}
