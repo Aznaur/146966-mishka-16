@@ -48,6 +48,7 @@
 
 .categories-list__link--interior {
   background-color: #63d1bb;
+
   &::after {
     content: "";
     position: absolute;
@@ -64,6 +65,7 @@
 
 .categories-list__link--toys {
   background-color: #56c3b2;
+
   &::after {
     content: "";
     position: absolute;
