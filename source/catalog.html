@@ -2,12 +2,13 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
+      <a href="index.html" class="page-header__logo">
         <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Mishka - милые штуки ручной работы">
       </a>
       <nav class="main-nav">
@@ -38,7 +39,7 @@
         <h2 class="visually-hidden">Товары</h2>
         <ul class="catalog__list">
           <li class="catalog__items card">
-            <a class="card__img" href="#"><img src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Фото товара Зайчик-попрыгайчик"></a>
+            <a class="card__img" href="#"><img src="img/photo-hare-mobile@1x.jpg" alt="Фото товара Зайчик-попрыгайчик"></a>
             <div class="card__description">
               <div class="card__wrapper-text">
                 <a href="#" class="card__link">Зайчик-попрыгайчик</a>
@@ -56,7 +57,7 @@
           </li>
           <li class="catalog__items card">
             <div class="card__img">
-              <a href="#"><img src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="Фото товара Зайчик-попрыгайчик"></a>
+              <a href="#"><img src="img/photo-bowl-mobile@1x.jpg" alt="Фото товара Зайчик-попрыгайчик"></a>
             </div>
             <div class="card__description">
               <div class="card__wrapper-text">
@@ -75,7 +76,7 @@
           </li>
           <li class="catalog__items card">
             <div class="card__img">
-              <a href="#"><img src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="Фото товара Зайчик-попрыгайчик"></a>
+              <a href="#"><img src="img/photo-toys-mobile@1x.jpg" alt="Фото товара Зайчик-попрыгайчик"></a>
             </div>
             <div class="card__description">
               <div class="card__wrapper-text">
@@ -94,11 +95,19 @@
           </li>
         </ul>
       </section>
-      <section class="review">
-        <h3 class="review__title">Процесс производства</h3>
-        <div class="review__video"></div>
-        <p class="review__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-        <a href="#" class="review__link-order">СДелать заказ</a>
+      <section class="trailer">
+        <div class="trailer__wrapper">
+          <div class="trailer__top">
+            <h3 class="trailer__title">Процесс производства</h3>
+          </div>
+          <div class="trailer__video">
+            <img src="img/video-mobile@1x.jpg" alt="Видео">
+          </div>
+          <div class="trailer__bottom">
+            <p class="trailer__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+            <a href="#" class="trailer__link-order">СДелать заказ</a>
+          </div>
+        </div>
       </section>
       <footer class="page-footer">
         <ul class="social-list">

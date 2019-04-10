@@ -1,0 +1,44 @@
+.card__img {
+  display: block;
+
+  & img {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card__description {
+  border: 1px solid #ededed;
+  padding: 27px 28px 28px;
+  box-sizing: border-box;
+}
+
+.card__link {
+  font-size: 17px;
+  line-height: 24px;
+  text-decoration: none;
+  color: $color;
+}
+
+.card__parameters {
+  font-size: 13px;
+  line-height: 30px;
+  margin: 0;
+  margin-top: 10px;
+  font-weight: normal;
+}
+
+.card__wrapper-text {
+  border-bottom: 1px solid #ececec;
+  padding-bottom: 15px;
+}
+
+.card__add-cart svg {
+  opacity: 0.2;
+}
+
+.card__wrapper-price {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
