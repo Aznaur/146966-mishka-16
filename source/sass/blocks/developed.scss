@@ -1,0 +1,30 @@
+.developed {
+  position: relative;
+  width: 260px;
+  margin: 0 auto;
+}
+
+.developed__text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 19px;
+  text-decoration: none;
+  color: $color;
+  padding-left: 39px;
+  padding-right: 30px;
+  padding-top: 23px;
+  box-sizing: border-box;
+}
+
+@media (min-width: 744px){
+  .developed {
+    position: relative;
+    width: 200px;
+    margin: 0;
+  }
+
+  .developed__text {
+    padding: 0;
+  }
+}

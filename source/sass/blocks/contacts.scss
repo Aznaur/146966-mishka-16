@@ -1,3 +1,6 @@
+.contacts {
+  padding-bottom: 40px;
+}
 .contacts__title {
   margin: 0;
   padding: 0;
@@ -60,15 +63,22 @@
 
 .contacts__write {
   display: block;
-  min-width: 259px;
+  width: 260px;
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
   line-height: 20px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 15px 53px;
+  padding: 15px 0;
   text-align: center;
-  border: 1px solid black;
-  margin: 0 30px 40px 30px;
+  border: 2px solid black;
+  margin: 0 auto;
+}
+
+@media (min-width: 744px) {
+  .contacts__write {
+    width: 230px;
+    font-size: 17px;
+  }
 }
