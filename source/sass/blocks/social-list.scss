@@ -16,7 +16,7 @@
 }
 
 
-@media (min-width: 744px) {
+@media (min-width: $table-width) {
     .social-list {
       display: flex;
       flex-shrink: 0;
