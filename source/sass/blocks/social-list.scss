@@ -17,18 +17,18 @@
 
 
 @media (min-width: $table-width) {
-    .social-list {
-      display: flex;
-      flex-shrink: 0;
-      width: 141px;
-      margin: 0;
-      padding-left: 0;
-      padding-right: 0;
-      padding-bottom: 0;
-      justify-content: space-between;
-      list-style: none;
-      border: 0;
-      box-sizing: border-box;
-      align-items: center;
+  .social-list {
+    display: flex;
+    flex-shrink: 0;
+    width: 141px;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    justify-content: space-between;
+    list-style: none;
+    border: 0;
+    box-sizing: border-box;
+    align-items: center;
   }
 }
