@@ -63,3 +63,24 @@
   font-weight: bold;
   margin: 25px 0;
 }
+
+@media (min-width: $table-width) {
+  .categories-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .categories-list__items {
+    width: 50%;
+    box-sizing: border-box;
+  }
+
+  .categories-list__text {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .categories-list__text {
+    margin: 30px 0;
+  }
+}
