@@ -22,3 +22,73 @@
   padding: 0;
   font-weight: normal;
 }
+
+.review__control-btn {
+  width: 100%;
+  display: flex;
+}
+
+
+.review__btn {
+  border: none;
+  background-color: transparent;
+  border: 1px solid #ececec;
+  width: 100%;
+  min-height: 52px;
+  padding: 0;
+  margin-bottom: 38px;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  &--left {
+    background-image: url("../img/icon-left-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--right {
+    margin-left: -1px;
+    background-image: url("../img/icon-right-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+@media (min-width: $table-width) {
+  .review {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .review__text {
+    width: 100%;
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 58px;
+  }
+
+  .review__author {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 2px;
+  }
+
+  .review__email-author {
+    line-height: 30px;
+  }
+
+  .review__author-data {
+    width: 334px;
+  }
+
+  .review__control-btn {
+    width: 174px;
+  }
+
+  .review__btn {
+    border: none;
+    margin-bottom: 0;
+  }
+}
