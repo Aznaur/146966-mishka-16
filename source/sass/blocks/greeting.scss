@@ -29,7 +29,6 @@
 
 @media (min-width: $table-width) {
   .greeting {
-
     &::after {
       content: "";
       position: absolute;
@@ -44,8 +43,8 @@
     }
   }
 
-  .greeting__wrap  {
+  .greeting__wrap {
     width: calc(100% - 100px);
     margin: 0 auto;
-    }
+  }
 }
