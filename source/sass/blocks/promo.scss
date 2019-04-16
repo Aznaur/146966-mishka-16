@@ -3,7 +3,7 @@
   padding-top: 17px;
 }
 
-.promo__list{
+.promo__list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -34,6 +34,7 @@
   .promo__list {
     display: flex;
   }
+
   .promo__items {
     &:nth-of-type(3) {
       margin-left: auto;
