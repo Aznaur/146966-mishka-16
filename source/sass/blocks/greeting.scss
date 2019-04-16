@@ -1,8 +1,8 @@
 .greeting {
-  display: flex;
+  // display: flex;
   position: relative;
-  flex-direction: column;
-  align-items: center;
+  // flex-direction: column;
+  // align-items: center;
   padding-top: 70px;
   background-color: #f9f9f9;
   background-image: url("../img/hero-mobile@1x.jpg");
@@ -29,6 +29,8 @@
 
 @media (min-width: $table-width) {
   .greeting {
+    padding-top: 0;
+
     &::after {
       content: "";
       position: absolute;
@@ -47,4 +49,13 @@
     width: calc(100% - 100px);
     margin: 0 auto;
   }
+
+  .greeting__slogan {
+    margin-top: 110px;
+    margin-bottom: 374px;
+    width: 500px;
+    font-size: $title-size-desk;
+    line-height: $title-height-desk;
+  }
+
 }

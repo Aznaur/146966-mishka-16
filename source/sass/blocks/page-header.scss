@@ -20,3 +20,14 @@
     display: block;
   }
 }
+
+@media (min-width: $table-width) {
+  .page-header {
+    padding: 0 50px;
+  }
+
+  .page-header__logo {
+    left: 50px;
+    margin-left: 0;
+  }
+}

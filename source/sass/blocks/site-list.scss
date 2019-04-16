@@ -1,0 +1,18 @@
+@media (min-width: $table-width) {
+  .site-list {
+    padding-top: 17px;
+  }
+
+  .site-list__items {
+    margin-right: 36px;
+    z-index: 2;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  .site-list__link {
+    font-size: 15px;
+  }
+}
