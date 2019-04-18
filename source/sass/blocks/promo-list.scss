@@ -1,3 +1,36 @@
 .promo-list {
   display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.promo-new {
+  display: none;
+}
+
+.promo-sale {
+  display: none;
+}
+
+
+@media (min-width: $table-width) {
+  .promo-list {
+    order: 3;
+    display: flex;
+    flex-basis: 231px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: flex-start;
+    margin-left: calc(100% - 536px);
+    margin-bottom: -200px;
+    padding-top: 17px;
+    z-index: 2;
+  }
+
+  .promo__text{
+    font-size: 15px;
+    font-weight: normal;
+    margin: 0;
+  }
 }
