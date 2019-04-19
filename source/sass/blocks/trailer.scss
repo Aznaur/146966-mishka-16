@@ -32,7 +32,7 @@
   margin: 0;
   padding: 0;
   font-size: 17px;
-  margin-left: 50px;
+  margin-left: 55px;
 }
 
 .trailer__video {
@@ -60,7 +60,7 @@
 }
 
 .trailer__bottom {
-  padding: 30px 34px;
+  padding: 28px 34px 32px 34px;
 }
 
 .trailer__text {
@@ -77,10 +77,11 @@
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
+  font-size: 18px;
   line-height: 20px;
   box-sizing: border-box;
-  padding: 15px 24px;
+  padding: 14px 14px;
   text-align: center;
-  border: 1px solid black;
+  border: 2px solid black;
   margin-top: 25px;
 }

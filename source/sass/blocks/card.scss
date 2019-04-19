@@ -9,7 +9,7 @@
 
 .card__description {
   border: 1px solid #ededed;
-  padding: 27px 28px 28px;
+  padding: 27px 28px 27px;
   box-sizing: border-box;
 }
 
@@ -24,13 +24,13 @@
   font-size: 13px;
   line-height: 30px;
   margin: 0;
-  margin-top: 10px;
+  margin-top: 5px;
   font-weight: normal;
 }
 
 .card__wrapper-text {
   border-bottom: 1px solid #ececec;
-  padding-bottom: 15px;
+  padding-bottom: 19px;
 }
 
 .card__add-cart svg {
@@ -40,5 +40,5 @@
 .card__wrapper-price {
   display: flex;
   justify-content: space-between;
-  padding-top: 20px;
+  padding-top: 21px;
 }
