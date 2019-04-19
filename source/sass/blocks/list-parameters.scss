@@ -1,7 +1,7 @@
 .list-parameters {
   border-collapse: collapse;
   width: 100%;
-  margin-bottom: 28px;
+  margin-bottom: 27px;
 }
 
 .list-parameters__name {
@@ -10,11 +10,16 @@
   line-height: 20px;
   font-weight: normal;
   padding: 10px 0;
+  word-break: break-word;
 }
+
 
 .list-parameters__value {
   border-bottom: 1px solid #ececec;
   font-size: 15px;
   line-height: 20px;
   font-weight: normal;
+  box-sizing: border-box;
+  padding-left: 15px;
+  word-break: break-word;
 }

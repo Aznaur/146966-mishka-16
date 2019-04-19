@@ -23,6 +23,7 @@
   margin: 0;
   padding: 0;
   margin-bottom: 24.5px;
+  word-break: break-word
 }
 
 .reviews__btn-write {
@@ -31,11 +32,13 @@
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
+  font-size: 18px;
   line-height: 20px;
   box-sizing: border-box;
-  padding: 15px 83px;
+  padding: 14px 50px;
   text-align: center;
-  border: 1px solid black;
+  border: 2px solid black;
+  word-break: break-word;
 }
 
 @media (min-width: $table-width) {

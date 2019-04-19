@@ -1,5 +1,5 @@
 .review {
-  margin-bottom: 27.5px;
+  margin-bottom: 39px;
 }
 
 .review__text {
@@ -14,7 +14,11 @@
 .review__author {
   margin: 0;
   padding: 0;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
+}
+
+.review__author-data {
+  margin-bottom: 32px;
 }
 
 .review__email-author {
@@ -28,14 +32,12 @@
   display: flex;
 }
 
-
 .review__btn {
   background-color: transparent;
   border: 1px solid #ececec;
   width: 100%;
   min-height: 52px;
   padding: 0;
-  margin-bottom: 38px;
   box-sizing: border-box;
   cursor: pointer;
 

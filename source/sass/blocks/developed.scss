@@ -11,10 +11,14 @@
   font-size: 19px;
   text-decoration: none;
   color: $color;
-  padding-left: 39px;
-  padding-right: 30px;
-  padding-top: 23px;
+  padding-left: 37px;
+  padding-right: 39px;
+  padding-top: 19px;
   box-sizing: border-box;
+}
+
+.developed__icone {
+  padding-top: 3px;
 }
 
 @media (min-width: $table-width) {

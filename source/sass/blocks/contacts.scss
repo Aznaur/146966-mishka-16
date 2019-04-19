@@ -1,5 +1,5 @@
 .contacts {
-  padding-bottom: 57px;
+  padding-bottom: 39px;
 }
 
 .contacts__title {
@@ -8,17 +8,18 @@
   font-size: 18px;
   line-height: $title-height;
   padding: 35.5px 30px 0 30px;
+  word-break: break-word;
 }
 
 .contacts__text-list {
   list-style: none;
   margin: 0;
-  padding: 30px 30px 39px 30px;
+  padding: 25px 30px 37px 30px;
 }
 
 .contacts__items {
   display: flex;
-  margin-bottom: 27px;
+  margin-bottom: 29px;
 
   &:last-of-type {
     margin: 0;
@@ -27,10 +28,11 @@
 
 .contacts__email-field,
 .contacts__address-field {
-  min-width: 77px;
+  width: 77px;
   font-size: 15px;
   line-height: $title-height;
   font-weight: normal;
+  word-break: break-word;
 }
 
 .contacts__email {
@@ -40,6 +42,7 @@
   text-decoration: none;
   color: $color;
   border-bottom: 1px solid #62d1ba;
+  word-break: break-word;
 }
 
 .contacts__address {
@@ -54,7 +57,7 @@
 
 .contacts__map {
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 42px;
 
   &-image {
     width: 100%;
@@ -68,6 +71,7 @@
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
+  font-size: 18px;
   line-height: 20px;
   box-sizing: border-box;
   padding: 14px 0;
