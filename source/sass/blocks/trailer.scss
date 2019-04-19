@@ -11,7 +11,7 @@
   display: flex;
   position: relative;
   justify-content: flex-end;
-  padding: 23.5px 34px;
+  padding: 23px 34px;
   box-sizing: border-box;
 
   &::before {
@@ -84,4 +84,55 @@
   text-align: center;
   border: 2px solid black;
   margin-top: 25px;
+}
+
+@media (min-width: $table-width) {
+  .trailer {
+    padding: 0;
+    padding-bottom: 63px;
+    width: calc(100% - 100px);
+    margin: 0 auto;
+  }
+
+  .trailer__wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 743px;
+  }
+
+  .trailer__top {
+    order: 1;
+    justify-content: flex-start;
+    padding: 37px 50px 0 50px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 80%;
+      left: 40px;
+    }
+  }
+
+  .trailer__title {
+    font-size: 20px;
+  }
+
+  .trailer__video {
+    order: -1;
+    min-height: 455px;
+  }
+
+  .trailer__bottom {
+    order: 2;
+    padding: 33px 41px 33px 40px;
+  }
+
+  .trailer__text {
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  .trailer__link-order {
+    margin-top: 35px;
+  }
 }

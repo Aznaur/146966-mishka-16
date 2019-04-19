@@ -16,3 +16,15 @@
     margin-bottom: 0;
   }
 }
+
+@media (min-width: $table-width) {
+  .catalog {
+    width: calc(100% - 100px);
+    margin: 0 auto;
+    padding: 78px 0 53px 0;
+  }
+
+  .catalog__items {
+    margin-bottom: 54px;
+  }
+}
