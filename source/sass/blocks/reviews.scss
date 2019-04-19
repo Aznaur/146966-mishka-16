@@ -45,7 +45,7 @@
   .reviews {
     display: flex;
     flex-wrap: wrap;
-    padding: 76.5px 50px 103px 50px;
+    padding: 76.5px 50px 60px 50px;
     align-items: flex-start;
     justify-content: space-between;
     background-image: url("../img/review@1x.jpg");
@@ -66,12 +66,14 @@
     line-height: $title-height-desk;
     order: -2;
     margin-bottom: 49px;
+    margin-left: -5px;
   }
 
   .reviews__btn-write {
     min-width: 175px;
     font-size: 17px;
     order: -1;
-    padding: 15px 39px;
+    padding: 14px 38px;
+    margin-top: 2px;
   }
 }

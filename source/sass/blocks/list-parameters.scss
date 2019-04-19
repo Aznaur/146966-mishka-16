@@ -23,3 +23,9 @@
   padding-left: 15px;
   word-break: break-word;
 }
+
+@media (min-width: $table-width) {
+  .list-parameters__value {
+    padding-left: 0;
+  }
+}
