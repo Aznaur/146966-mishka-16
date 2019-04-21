@@ -29,6 +29,13 @@
 
   .main-nav  {
     padding: 0;
-    justify-content: flex-start;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav  {
+    width: 1050px;
+    margin: 0 auto;
+    justify-content: space-between;
   }
 }

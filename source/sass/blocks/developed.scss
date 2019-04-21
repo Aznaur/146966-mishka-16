@@ -33,3 +33,9 @@
     margin-top: 5px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .developed__text{
+    margin-top: 0;
+  }
+}

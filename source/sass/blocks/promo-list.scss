@@ -34,3 +34,38 @@
     margin: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .promo-list {
+    flex-basis: 100%;
+    width: 100%;
+    margin-left: 0;
+    justify-content: flex-start;
+  }
+  .promo-new {
+    display: block;
+    margin-right: 60px;
+  }
+
+  .promo-sale {
+    display: block;
+    margin-right: 60px;
+  }
+
+  .promo__sale {
+    text-decoration: none;
+    color: $color;
+    font-size: 15px;
+  }
+
+  .promo {
+    margin-left: calc(100% - 604px);
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .promo-list__items:last-of-type {
+    margin-right: 0;
+  }
+}

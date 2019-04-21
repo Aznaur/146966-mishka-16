@@ -88,8 +88,16 @@
       margin-left: calc(100% - 444px);
     }
   }
+}
 
-  .site-list__items--logo {
+@media (min-width: $desktop-width) {
+  .site-list {
+    width: 636px;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
 
+  .site-list__items:nth-of-type(2) {
+    margin-left: calc(100% - 520px);
   }
 }
