@@ -30,5 +30,13 @@
 }
 
 @media (min-width: $desktop-width) {
+  .catalog {
+    width: 1050px;
+    margin: 0 auto;
+    padding: 121px 0 58px 0;
+  }
 
+  .catalog__list {
+    display: flex;
+  }
 }
