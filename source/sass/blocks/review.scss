@@ -94,3 +94,19 @@
     margin-bottom: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .review {
+    padding-left: 175px;
+    justify-content: space-between;
+  }
+
+  .review__text {
+    width: 771px;
+    margin-bottom: 38px;
+  }
+
+  .review__author {
+    font-size: 17px;
+  }
+}

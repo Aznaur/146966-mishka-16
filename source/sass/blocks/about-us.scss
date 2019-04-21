@@ -153,3 +153,19 @@
     line-height: 22px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .about-us__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .about-us {
+    width: 700px;
+    padding: 59px 0 90px 0;
+  }
+
+  .about-us__items-wrap {
+    width: 350px;
+  }
+}

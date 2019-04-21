@@ -58,3 +58,24 @@
     line-height: $title-height-desk;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .greeting__slogan {
+    font-size: 53px;
+    line-height: 57px;
+    width: 717px;
+    margin-bottom: 360px;
+  }
+
+  .greeting {
+    &::after {
+      content: "";
+      width: 100%;
+      bottom: -10px;
+      right: 0;
+      height: 34px;
+      background-image: url("../img/bg-zigzag-fill.des.svg");
+      background-size: 1250px 34px;
+    }
+  }
+}

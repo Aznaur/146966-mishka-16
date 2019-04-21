@@ -153,8 +153,10 @@
   .contacts {
     display: flex;
     flex-wrap: wrap;
-    padding: 70px 50px 66px 50px;
+    padding: 70px 0 51px 0;
     justify-content: space-between;
+    width: 1050px;
+    margin: 0 auto;
   }
 
   .contacts__wrap-title {
@@ -205,7 +207,7 @@
   .contacts__write {
     margin: 0;
     height: 52px;
-    margin-top: -91px;
+    margin-top: -106px;
     margin-left: 175px;
   }
 }

@@ -81,3 +81,35 @@
     margin: 30px 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .categories-list {
+    width: 1050px;
+    margin: 0 auto;
+  }
+
+  .categories-list__text {
+    margin: 28px 0 38px 0;
+  }
+
+  .categories-list__link {
+    padding-left: 36px;
+  }
+
+  .categories-list__link--interior {
+    &::after {
+      content: "";
+      top: 49%;
+    }
+  }
+
+  .categories-list__link--toys {
+    background-color: #56c3b2;
+
+    &::after {
+      content: "";
+      right: 35px;
+
+    }
+  }
+}
