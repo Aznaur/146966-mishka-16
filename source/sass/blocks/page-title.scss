@@ -27,7 +27,7 @@
     }
   }
 
-  .page-title__text  {
+  .page-title__text {
     font-size: $title-size-desk;
     line-height: $title-height-desk;
     padding: 94px 0 82px 0;
@@ -35,7 +35,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-title__text  {
+  .page-title__text {
     font-size: 53px;
     line-height: 57px;
     padding: 94px 0 110px 0;

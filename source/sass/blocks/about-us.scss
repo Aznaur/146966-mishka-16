@@ -143,6 +143,7 @@
     }
 
     &:nth-of-type(3) {
+      margin-bottom: 0;
       order: 4;
     }
 
@@ -156,14 +157,6 @@
 
     &:nth-of-type(6) {
       order: 5;
-    }
-  }
-
-  .about-us__items {
-
-
-    &:nth-of-type(3) {
-      margin-bottom: 0;
     }
   }
 
