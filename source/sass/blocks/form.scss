@@ -213,14 +213,14 @@
     }
 
     &--tell {
-      padding-top: 47px;
+      padding-top: 46px;
       background-color: #f1f1f1;
       padding-bottom: 8px;
     }
 
     &--email {
       background-color: #f1f1f1;
-      padding-bottom: 38px;
+      padding-bottom: 39px;
     }
 
     &--bottom {
@@ -306,11 +306,11 @@
     }
 
     &--tell {
-      padding-top: 15px;
+      padding-top: 4px;
     }
 
     &--email {
-      padding-top: 15px;
+      padding-top: 18px;
     }
 
     &--textarea {
@@ -329,7 +329,6 @@
   .form__control--tel {
     background-color: transparent;
     padding-left: 17px;
-    margin-top: -12px;
   }
 
   .form__control--email {
@@ -433,6 +432,7 @@
 
     &--width {
       margin-right: 8px;
+      padding-top: 19px;
     }
 
     &--textarea {
@@ -470,11 +470,15 @@
   }
 
   .form__items:last-of-type {
-    margin-bottom: 58px;
+    margin-bottom: 38px;
   }
 
   .form__fieldset--type {
     padding-bottom: 12px;
+  }
+
+  .form__fieldset--color {
+    padding-bottom: 11px;
   }
 
   .form__items--name {
@@ -488,7 +492,7 @@
   }
 
   .form__control-tell {
-    top: -1px;
+    top: 15px;
     right: 183px;
   }
 
@@ -501,7 +505,7 @@
   }
 
   .form__control-email {
-    top: -3px;
+    top: 15px;
     right: 179px;
   }
 
@@ -522,5 +526,9 @@
   .form__fieldset-wrap--bottom {
     width: 700px;
     margin-top: 36px;
+  }
+
+  .form__fieldset-wrap--email {
+    padding-bottom: 38px;
   }
 }
