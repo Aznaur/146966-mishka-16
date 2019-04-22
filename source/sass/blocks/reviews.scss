@@ -23,7 +23,7 @@
   margin: 0;
   padding: 0;
   margin-bottom: 24.5px;
-  word-break: break-word
+  word-break: break-word;
 }
 
 .reviews__btn-write {
@@ -96,7 +96,6 @@
       content: "";
       height: 23px;
       background-size: 1050px 23px;
-      -webkit-transform: rotate(180deg);
       transform: rotate(180deg);
     }
   }

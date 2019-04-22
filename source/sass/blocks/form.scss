@@ -168,9 +168,7 @@
 
 .form__control {
   position: relative;
-}
 
-.form__control {
   &-tell {
     position: absolute;
     top: 37px;
@@ -203,7 +201,7 @@
     padding-bottom: 11px;
 
     &--type {
-      padding-bottom: 70px
+      padding-bottom: 70px;
     }
 
     &--name {
@@ -216,7 +214,7 @@
     }
   }
 
-  .form__legend  {
+  .form__legend {
     width: 167px;
     flex-shrink: 0;
     margin-bottom: 0;
@@ -226,7 +224,7 @@
     }
   }
 
-  .form__label  {
+  .form__label {
     font-size: 19px;
     line-height: 18px;
   }
@@ -279,7 +277,6 @@
 
   .form__control--textarea {
     background-color: transparent;
-    padding-left: 17px;
     margin-top: -13px;
     padding: 11px 11px 11px 14px;
   }
@@ -364,7 +361,7 @@
 
 @media (min-width: $desktop-width) {
   .form__legend {
-    padding-left:60px;
+    padding-left: 60px;
     box-sizing: border-box;
 
     &--tell {
@@ -377,6 +374,7 @@
 
     &--textarea {
       margin-right: 8px;
+      padding-bottom: 0;
     }
   }
 
@@ -456,9 +454,5 @@
     &:last-of-type {
       margin-bottom: 0;
     }
-  }
-
-  .form__legend--textarea {
-    padding-bottom: 0;
   }
 }

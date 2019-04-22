@@ -13,7 +13,6 @@
   display: none;
 }
 
-
 @media (min-width: $table-width) {
   .promo-list {
     order: 3;
@@ -28,7 +27,7 @@
     z-index: 2;
   }
 
-  .promo__text{
+  .promo__text {
     font-size: 15px;
     font-weight: normal;
     margin: 0;
@@ -42,6 +41,7 @@
     margin-left: 0;
     justify-content: flex-start;
   }
+
   .promo-new {
     display: block;
     margin-right: 60px;
