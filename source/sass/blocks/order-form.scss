@@ -1,5 +1,5 @@
 .order-form {
-  padding: 30px 30px 55px 30px;
+  padding: 23px 30px 55px 30px;
 }
 
 .order-form__text {
@@ -9,4 +9,25 @@
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
+}
+
+@media (min-width: $table-width) {
+  .order-form {
+    padding: 71px 0 50px 0;
+  }
+
+  .order-form__text {
+    font-size: 17px;
+    line-height: 30px;
+    width: calc(100% - 100px);
+    margin: 0 auto;
+    max-width: 700px;
+    margin-bottom: 69px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order-form {
+    padding: 113px 0 50px 0;
+  }
 }

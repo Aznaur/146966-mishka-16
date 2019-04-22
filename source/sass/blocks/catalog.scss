@@ -10,9 +10,34 @@
 
 .catalog__items {
   box-sizing: border-box;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
 
   &:last-of-type {
     margin-bottom: 0;
+  }
+}
+
+@media (min-width: $table-width) {
+  .catalog {
+    width: calc(100% - 100px);
+    margin: 0 auto;
+    padding: 78px 0 53px 0;
+  }
+
+  .catalog__items {
+    margin-bottom: 54px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    width: 1050px;
+    margin: 0 auto;
+    padding: 121px 0 6px 0;
+  }
+
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
   }
 }

@@ -11,7 +11,7 @@
   display: flex;
   position: relative;
   justify-content: flex-end;
-  padding: 23.5px 34px;
+  padding: 23px 34px;
   box-sizing: border-box;
 
   &::before {
@@ -32,7 +32,7 @@
   margin: 0;
   padding: 0;
   font-size: 17px;
-  margin-left: 50px;
+  margin-left: 55px;
 }
 
 .trailer__video {
@@ -60,7 +60,7 @@
 }
 
 .trailer__bottom {
-  padding: 30px 34px;
+  padding: 28px 34px 32px 34px;
 }
 
 .trailer__text {
@@ -77,10 +77,120 @@
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
+  font-size: 18px;
   line-height: 20px;
   box-sizing: border-box;
-  padding: 15px 24px;
+  padding: 14px 14px;
   text-align: center;
-  border: 1px solid black;
+  border: 2px solid black;
   margin-top: 25px;
+}
+
+@media (min-width: $table-width) {
+  .trailer {
+    padding: 0;
+    padding-bottom: 63px;
+    width: calc(100% - 100px);
+    margin: 0 auto;
+  }
+
+  .trailer__wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 743px;
+  }
+
+  .trailer__top {
+    order: 1;
+    justify-content: flex-start;
+    padding: 37px 50px 0 50px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 80%;
+      left: 40px;
+    }
+  }
+
+  .trailer__title {
+    font-size: 20px;
+  }
+
+  .trailer__video {
+    order: -1;
+    min-height: 455px;
+  }
+
+  .trailer__bottom {
+    order: 2;
+    padding: 33px 41px 33px 40px;
+  }
+
+  .trailer__text {
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  .trailer__link-order {
+    margin-top: 35px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .trailer {
+    width: 1050px;
+    padding-bottom: 104px;
+  }
+
+  .trailer__wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-end;
+    min-height: 455px;
+  }
+
+  .trailer__video {
+    width: 65%;
+
+    & img {
+      height: 455px;
+    }
+  }
+
+  .trailer__top {
+    width: 35%;
+    padding: 0;
+    box-sizing: border-box;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 41%;
+      left: 79px;
+    }
+  }
+
+  .trailer__title {
+    margin-left: 77px;
+    padding-top: 94px;
+    width: 200px;
+  }
+
+  .trailer__bottom {
+    width: 35%;
+    box-sizing: border-box;
+    padding: 0;
+    padding-left: 79px;
+    margin-top: -279px;
+  }
+
+  .trailer__link-order {
+    margin-top: 46px;
+    width: 230px;
+    font-size: 17px;
+    line-height: 16px;
+    padding: 16px 16px;
+  }
 }

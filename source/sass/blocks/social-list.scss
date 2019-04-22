@@ -1,0 +1,36 @@
+.social-list {
+  display: flex;
+  width: 260px;
+  margin: 0 auto;
+  padding-top: 6px;
+  padding-left: 57px;
+  padding-right: 60px;
+  padding-bottom: 26px;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  border-bottom: 1px solid #e5e5e5;
+  box-sizing: border-box;
+}
+
+.social-list__link {
+  display: flex;
+}
+
+
+@media (min-width: $table-width) {
+  .social-list {
+    display: flex;
+    flex-shrink: 0;
+    width: 141px;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    justify-content: space-between;
+    list-style: none;
+    border: 0;
+    box-sizing: border-box;
+    align-items: center;
+  }
+}
