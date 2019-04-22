@@ -1,0 +1,51 @@
+.promo {
+  display: none;
+  padding-top: 17px;
+}
+
+.promo__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.promo__sale {
+  text-decoration: none;
+  color: $color;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.promo__text {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #444444;
+  margin: 0;
+}
+
+@media (min-width: $table-width) {
+  .promo {
+    display: block;
+    width: calc(100% - 100px);
+    margin: 0 auto;
+  }
+
+  .promo__list {
+    display: flex;
+  }
+
+  .promo__items {
+    &:nth-of-type(3) {
+      margin-left: auto;
+    }
+
+    &:nth-of-type(2) {
+      display: none;
+    }
+
+    &:nth-of-type(1) {
+      display: none;
+    }
+  }
+}
