@@ -2,7 +2,7 @@
   position: relative;
   border: none;
   margin: 0;
-  padding: 0 0 40px 0;
+  padding: 0 0 30px 0;
 
   &--name {
     padding: 0 0 27px 0;
@@ -16,11 +16,15 @@
   &--textarea {
     padding: 0 0 10px 0;
   }
+
+  &--color {
+    padding-bottom: 25px;
+  }
 }
 
 .form__legend {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 19px;
   width: 60px;
   text-transform: uppercase;
   color: #62d1ba;
@@ -75,11 +79,16 @@
 
   &--radio {
     padding-left: 63px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 4px;
   }
 
   &--checkbox {
     padding-left: 63px;
-    margin-bottom: 43px;
+    margin-bottom: 17px;
+    padding-top: 12px;
+    padding-bottom: 14px;
   }
 
   &--name {
@@ -95,6 +104,10 @@
   height: 52px;
   border: none;
   border-bottom: 2px solid #000000;
+}
+
+.form__control--tel {
+  font-size: 19px;
 }
 
 .form__control--textarea {
@@ -146,9 +159,9 @@
   content: "";
   position: absolute;
   left: -63px;
-  top: -9px;
+  top: -10px;
   width: 36px;
-  height: 36px;
+  height: 35px;
   border: 2px solid #000000;
 }
 
@@ -156,9 +169,9 @@
   content: "";
   position: absolute;
   left: -63px;
-  top: -9px;
+  top: -10px;
   width: 36px;
-  height: 36px;
+  height: 35px;
   border: 2px solid #000000;
   background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
@@ -193,24 +206,57 @@
 }
 
 @media (min-width: $table-width) {
+  .form__fieldset-wrap {
+    &--color {
+      padding-top: 45px;
+      background-color: #f1f1f1;
+    }
+
+    &--tell {
+      padding-top: 47px;
+      background-color: #f1f1f1;
+      padding-bottom: 8px;
+    }
+
+    &--email {
+      background-color: #f1f1f1;
+      padding-bottom: 38px;
+    }
+
+    &--bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: calc(100% - 100px);
+      margin: 0 auto;
+      max-width: 1050px;
+      margin-top: 40px;
+    }
+  }
+
   .form__fieldset {
     display: flex;
     width: calc(100% - 100px);
     margin: 0 auto;
     max-width: 1050px;
-    padding-bottom: 11px;
+    padding-bottom: 28px;
 
     &--type {
-      padding-bottom: 70px;
+      padding-bottom: 50px;
     }
 
     &--name {
-      padding-top: 63px;
+      padding-top: 47px;
       padding-bottom: 50px;
     }
 
     &--textarea {
-      padding-top: 63px;
+      padding-top: 47px;
+      padding-bottom: 10px;
+    }
+
+    &--height {
+      padding-bottom: 12px;
     }
   }
 
@@ -218,6 +264,7 @@
     width: 167px;
     flex-shrink: 0;
     margin-bottom: 0;
+    padding-top: 16px;
 
     &::after {
       width: 0;
@@ -227,13 +274,15 @@
   .form__label {
     font-size: 19px;
     line-height: 18px;
+    align-self: center;
   }
 
   .form__items {
     &--radio {
       padding-left: 80px;
-      padding-top: 2px;
-      margin-bottom: 56px;
+      padding-top: 17px;
+      margin-bottom: 21px;
+      padding-bottom: 20px;
     }
 
     &--checkbox {
@@ -242,7 +291,9 @@
       box-sizing: border-box;
       padding-left: 80px;
       margin-right: 62px;
-      margin-bottom: 58px;
+      margin-bottom: 21px;
+      padding-top: 17px;
+      padding-bottom: 20px;
 
       &:nth-of-type(2n) {
         margin-right: 0;
@@ -251,16 +302,28 @@
 
     &--name {
       display: flex;
-      margin-bottom: 37px;
+      margin-bottom: 21px;
+    }
+
+    &--tell {
+      padding-top: 15px;
+    }
+
+    &--email {
+      padding-top: 15px;
+    }
+
+    &--textarea {
+      padding-top: 16px;
     }
   }
 
   .form__control--text {
-    box-sizing: border-box;
-    margin-left: 30px;
-    margin-top: -13px;
+    box-sizing: content-box;
+    margin-left: 24px;
     padding: 0;
-    padding-left: 15px;
+    padding-left: 17px;
+    height: 53px;
   }
 
   .form__control--tel {
@@ -282,12 +345,12 @@
   }
 
   .form__control-email {
-    top: -3px;
+    top: 15px;
     right: 22px;
   }
 
   .form__control-tell {
-    top: -1px;
+    top: 14px;
     right: 26px;
   }
 
@@ -454,5 +517,10 @@
     &:last-of-type {
       margin-bottom: 0;
     }
+  }
+
+  .form__fieldset-wrap--bottom {
+    width: 700px;
+    margin-top: 36px;
   }
 }
