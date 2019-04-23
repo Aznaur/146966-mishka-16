@@ -5,11 +5,7 @@
   padding: 0;
 }
 
-.promo-new {
-  display: none;
-}
-
-.promo-sale {
+.promo-list__sale {
   display: none;
 }
 
@@ -27,7 +23,7 @@
     z-index: 2;
   }
 
-  .promo__text {
+  .promo-list__text {
     font-size: 15px;
     font-weight: normal;
     margin: 0;
@@ -42,17 +38,9 @@
     justify-content: flex-start;
   }
 
-  .promo-new {
+  .promo-list__sale {
     display: block;
     margin-right: 60px;
-  }
-
-  .promo-sale {
-    display: block;
-    margin-right: 60px;
-  }
-
-  .promo__sale {
     text-decoration: none;
     color: $color;
     font-size: 15px;

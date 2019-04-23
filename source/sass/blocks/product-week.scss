@@ -11,11 +11,12 @@
     bottom: 0;
     left: 0;
     right: 0;
-    height: 6px;
+    height: 7px;
     background-image: url("../img/bg-zigzag-line.svg");
     background-repeat: repeat-x;
     background-position: center bottom;
-    background-size: 300px 6px;
+    background-size: 319px 100%;
+    transform: rotate(180deg);
   }
 }
 

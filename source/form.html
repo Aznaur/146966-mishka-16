@@ -20,7 +20,7 @@
       </button>
       <ul class="site-list">
         <li class="site-list__items site-list__items--logo">
-          <a href="#" class="site-list__logo">
+          <a href="index.html" class="site-list__logo">
             <img class="main-nav__logo-image" src="img/logo-mobile.svg" alt="Mishka - милые штуки ручной работы">
           </a>
         </li>
@@ -43,31 +43,31 @@
           <a href="catalog.html" class="catalog-nav__link">Каталог товаров</a>
         </li>
         <li class="catalog-nav__items">
-          <a href="#" class="catalog-nav__link">Вязание на заказ</a>
+          <a href="form.html" class="catalog-nav__link">Вязание на заказ</a>
         </li>
       </ul>
       <ul class="promo-list">
-        <li class="promo-list__items promo-new">
-          <a href="#" class="promo__sale">Новые поступления</a>
+        <li class="promo-list__items">
+          <a href="#" class="promo-list__sale">Новые поступления</a>
         </li>
-        <li class="promo-list__items promo-sale">
-          <a href="#" class="promo__sale">Распродажа</a>
+        <li class="promo-list__items">
+          <a href="#" class="promo-list__sale">Распродажа</a>
         </li>
         <li class="site-list__items promo">
-          <p class="promo__text">Бесплатная доставка по России</p>
+          <p class="promo-list__text">Бесплатная доставка по России</p>
         </li>
       </ul>
     </nav>
   </header>
   <main class="page-main">
-    <section class="advert">
-      <h1 class="advert__title">Вязание на заказ</h1>
+    <section class="page-title">
+      <h1 class="page-title__text">Вязание на заказ</h1>
     </section>
     <section class="order-form">
       <h2 class="visually-hidden">Форма заказа</h2>
       <p class="order-form__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="wrap__fieldset">
+        <div class="form__fieldset-wrap">
           <div class="form__fieldset form__fieldset--type">
             <h3 class="form__legend">ТИП</h3>
             <ul class="form__list">
@@ -82,8 +82,8 @@
             </ul>
           </div>
         </div>
-        <div class="wrap__fieldset wrap__fieldset--color">
-          <div class="form__fieldset">
+        <div class="form__fieldset-wrap form__fieldset-wrap--color">
+          <div class="form__fieldset form__fieldset--color">
             <h3 class="form__legend">Цвет</h3>
             <ul class="form__list form__list--checkbox">
               <li class="form__items form__items--checkbox">
@@ -113,26 +113,26 @@
             </ul>
           </div>
         </div>
-        <div class="wrap__fieldset">
+        <div class="form__fieldset-wrap">
           <div class="form__fieldset form__fieldset--name">
             <h3 class="form__legend form__legend--name">ФИО</h3>
             <ul class="form__list form__list--name">
               <li class="form__items form__items--name">
-                <label class="form__label" for="name-field">Имя</label>
+                <label class="form__label" for="name-field">Имя:</label>
                 <input class="form__control form__control--text" type="text" name="name" id="name-field" placeholder="Введите ваше имя*">
               </li>
               <li class="form__items form__items--name">
-                <label class="form__label" for="surname-field">Фамилия</label>
+                <label class="form__label" for="surname-field">Фамилия:</label>
                 <input class="form__control form__control--text" type="text" name="surname" id="surname-field" placeholder="Укажите фамилию*">
               </li>
               <li class="form__items form__items--name">
-                <label class="form__label" for="middle-name-field">Отчество</label>
+                <label class="form__label" for="middle-name-field">Отчество:</label>
                 <input class="form__control form__control--text" type="text" name="middle-name" id="middle-name-field" placeholder="Отчество, если желаете">
               </li>
             </ul>
           </div>
         </div>
-        <div class="wrap__fieldset wrap__fieldset--tell">
+        <div class="form__fieldset-wrap form__fieldset-wrap--tell">
           <div class="form__fieldset form__fieldset--height">
             <h3 class="form__legend form__legend--tell">Тел</h3>
             <ul class="form__list form__list--tell">
@@ -155,7 +155,7 @@
             </ul>
           </div>
         </div>
-        <div class="wrap__fieldset wrap__fieldset--email">
+        <div class="form__fieldset-wrap form__fieldset-wrap--email">
           <div class="form__fieldset form__fieldset--height">
             <h3 class="form__legend form__legend--width">E-mail</h3>
             <ul class="form__list form__list--email">
@@ -168,7 +168,7 @@
             </ul>
           </div>
         </div>
-        <div class="wrap__fieldset wrap__fieldset--textarea">
+        <div class="form__fieldset-wrap form__fieldset-wrap--textarea">
           <div class="form__fieldset form__fieldset--textarea">
             <h3 class="form__legend form__legend--textarea">Доп</h3>
             <ul class="form__list">
@@ -178,7 +178,7 @@
             </ul>
           </div>
         </div>
-        <div class="wrap__fieldset wrap__fieldset--bottom">
+        <div class="form__fieldset-wrap form__fieldset-wrap--bottom">
           <p class="form__text">*Поля обязательны для заполнения</p>
           <button type="submit" class="form__btn">ОТПРАВИТЬ ЗАКАЗ</button>
         </div>
