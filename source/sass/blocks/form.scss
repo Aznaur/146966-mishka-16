@@ -142,6 +142,7 @@
   position: relative;
   display: block;
   line-height: 18px;
+  cursor: pointer;
 }
 
 .form__control--radio + .form__label--radio::before {
@@ -166,6 +167,14 @@
   top: 3px;
 }
 
+.form__label--radio:hover::before {
+  border-color: #62d1ba;
+}
+
+.form__label--radio:active::before {
+  border-color: #c7c7c7;
+}
+
 .form__control--checkbox + .form__label--checkbox::before {
   content: "";
   position: absolute;
@@ -174,6 +183,7 @@
   width: 36px;
   height: 35px;
   border: 2px solid #000000;
+  z-index: 5;
 }
 
 .form__control--checkbox:checked + .form__label--checkbox::before {
@@ -183,15 +193,40 @@
   top: -10px;
   width: 36px;
   height: 35px;
-  border: 2px solid #000000;
   background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 22px 16px;
 }
 
+.form__label--checkbox:hover::before {
+  border-color: #62d1ba;
+}
+
+.form__label--checkbox:active::before {
+  border-color: #c7c7c7;
+}
+
 .form__control {
   position: relative;
+
+  &:hover {
+    border-color: #62d1ba;
+
+    & ~ svg {
+      fill: #62d1ba;
+      opacity: 1;
+    }
+
+    & ~ svg path {
+      fill: #62d1ba;
+      opacity: 1;
+    }
+  }
+
+  &:focus {
+    border-color: #62d1ba;
+  }
 
   &-tell {
     position: absolute;
