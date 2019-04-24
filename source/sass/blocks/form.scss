@@ -104,6 +104,7 @@
   height: 52px;
   border: none;
   border-bottom: 2px solid #000000;
+  padding-right: 45px;
 }
 
 .form__control--tel {
@@ -125,6 +126,16 @@
   border: 2px solid black;
   font-weight: bold;
   box-sizing: border-box;
+
+  &:hover {
+    background-color: #444444;
+    color: #ffffff;
+    border-color: #444444;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .form__label {
@@ -329,11 +340,13 @@
   .form__control--tel {
     background-color: transparent;
     padding-left: 17px;
+    padding-right: 65px;
   }
 
   .form__control--email {
     background-color: transparent;
     padding-left: 17px;
+    padding-right: 65px;
     margin-top: -14px;
   }
 

@@ -16,6 +16,10 @@
   padding-left: 30px;
   padding-right: 30px;
   box-sizing: border-box;
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 
@@ -36,6 +40,14 @@
     background-size: cover;
     opacity: 0.2;
   }
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  &:active::after {
+    opacity: 0.1;
+  }
 }
 
 .categories-list__link--toys {
@@ -54,6 +66,18 @@
     background-position: center;
     background-size: cover;
     opacity: 0.2;
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+
+    &:active::after {
+      opacity: 0.1;
+    }
+  }
+
+  &:active::after {
+    opacity: 0.1;
   }
 }
 
