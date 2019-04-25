@@ -9,12 +9,16 @@
   background-repeat: no-repeat;
   background-position: center -19px;
   background-size: 575px 373px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/hero-mobile@2x.jpg");
+  }
 }
 
 .greeting__slogan {
   width: 260px;
   margin: 0 auto;
-  margin-bottom: 123px;
+  margin-bottom: 122px;
   padding: 0;
   font-size: 27px;
   line-height: 30px;
@@ -30,6 +34,14 @@
 @media (min-width: $table-width) {
   .greeting {
     padding-top: 0;
+    background-image: url("../img/hero-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center -1px;
+    background-size: 1150px 746px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/hero-tablet@2x.jpg");
+    }
 
     &::after {
       content: "";
@@ -68,6 +80,9 @@
   }
 
   .greeting {
+    padding-top: 0;
+    background-size: cover;
+
     &::after {
       content: "";
       width: 100%;
