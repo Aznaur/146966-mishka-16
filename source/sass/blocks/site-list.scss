@@ -65,11 +65,11 @@
     font-size: 0;
     display: flex;
 
-    &:hover .site-list__search path{
+    &:hover .site-list__search path {
       fill: rgba(99, 209, 187, 1);
     }
 
-    &:active .site-list__search path{
+    &:active .site-list__search path {
       fill: rgba(99, 209, 187, 0.3);
     }
   }
@@ -86,11 +86,11 @@
     color: $color;
     text-decoration: none;
 
-    &:hover .site-list__basket path{
+    &:hover .site-list__basket path {
       fill: rgba(99, 209, 187, 1);
     }
 
-    &:active .site-list__basket path{
+    &:active .site-list__basket path {
       fill: rgba(99, 209, 187, 0.3);
     }
   }

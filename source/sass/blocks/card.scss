@@ -1,10 +1,10 @@
 .card {
   &:hover {
-    box-shadow: 0 6px 10px 0 rgba(0,0,0,.1);
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
   }
 
   &:active {
-    box-shadow: 0 3px 5px 0 rgba(0,0,0,.1);
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -56,14 +56,14 @@
 
 .card__add-cart svg {
   & path {
-    fill:  rgba(0, 0, 0, 0.2);
+    fill: rgba(0, 0, 0, 0.2);
   }
 
-  &:hover path{
+  &:hover path {
     fill: rgba(99, 209, 187, 1);
   }
 
-  &:active path{
+  &:active path {
     fill: rgba(99, 209, 187, 0.3);
   }
 }
