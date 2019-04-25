@@ -104,6 +104,7 @@
   height: 52px;
   border: none;
   border-bottom: 2px solid #000000;
+  padding-right: 45px;
 }
 
 .form__control--tel {
@@ -125,12 +126,23 @@
   border: 2px solid black;
   font-weight: bold;
   box-sizing: border-box;
+
+  &:hover {
+    background-color: #444444;
+    color: #ffffff;
+    border-color: #444444;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .form__label {
   position: relative;
   display: block;
   line-height: 18px;
+  cursor: pointer;
 }
 
 .form__control--radio + .form__label--radio::before {
@@ -155,6 +167,14 @@
   top: 3px;
 }
 
+.form__label--radio:hover::before {
+  border-color: #62d1ba;
+}
+
+.form__label--radio:active::before {
+  border-color: #c7c7c7;
+}
+
 .form__control--checkbox + .form__label--checkbox::before {
   content: "";
   position: absolute;
@@ -163,6 +183,7 @@
   width: 36px;
   height: 35px;
   border: 2px solid #000000;
+  z-index: 5;
 }
 
 .form__control--checkbox:checked + .form__label--checkbox::before {
@@ -172,15 +193,50 @@
   top: -10px;
   width: 36px;
   height: 35px;
-  border: 2px solid #000000;
   background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 22px 16px;
 }
 
+.form__label--checkbox:hover::before {
+  border-color: #62d1ba;
+}
+
+.form__label--checkbox:active::before {
+  border-color: #c7c7c7;
+}
+
 .form__control {
   position: relative;
+
+  &:hover {
+    border-color: #62d1ba;
+
+    & ~ svg {
+      fill: #62d1ba;
+      opacity: 1;
+    }
+
+    & ~ svg path {
+      fill: #62d1ba;
+      opacity: 1;
+    }
+  }
+
+  &:focus {
+    border-color: #62d1ba;
+
+    & ~ svg {
+      fill: #62d1ba;
+      opacity: 1;
+    }
+
+    & ~ svg path {
+      fill: #62d1ba;
+      opacity: 1;
+    }
+  }
 
   &-tell {
     position: absolute;
@@ -329,11 +385,13 @@
   .form__control--tel {
     background-color: transparent;
     padding-left: 17px;
+    padding-right: 65px;
   }
 
   .form__control--email {
     background-color: transparent;
     padding-left: 17px;
+    padding-right: 65px;
     margin-top: -14px;
   }
 

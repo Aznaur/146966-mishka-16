@@ -1,3 +1,13 @@
+.card {
+  &:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
+}
+
 .card__img {
   display: block;
 
@@ -22,6 +32,14 @@
   line-height: 24px;
   text-decoration: none;
   color: $color;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .card__parameters {
@@ -37,7 +55,17 @@
 }
 
 .card__add-cart svg {
-  opacity: 0.2;
+  & path {
+    fill: rgba(0, 0, 0, 0.2);
+  }
+
+  &:hover path {
+    fill: rgba(99, 209, 187, 1);
+  }
+
+  &:active path {
+    fill: rgba(99, 209, 187, 0.3);
+  }
 }
 
 .card__wrapper-price {
@@ -112,7 +140,6 @@
 
   .card__description {
     width: 100%;
-    margin-bottom: 52px;
   }
 
   .card__wrapper-price {

@@ -9,6 +9,14 @@
   text-decoration: none;
   color: $color;
   font-size: 15px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $table-width) {

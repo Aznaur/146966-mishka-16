@@ -19,9 +19,14 @@
         <ul class="site-list">
           <li class="site-list__items site-list__items--logo">
             <a href="#" class="site-list__logo">
-              <img class="main-nav__logo-image" src="img/logo-mobile.svg" alt="Mishka - милые штуки ручной работы">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                <img class="main-nav__logo-image" src="img/logo-mobile.svg" alt="Mishka - милые штуки ручной работы">
+              </picture>
             </a>
           </li>
+
           <li class="site-list__items site-list__items--search">
             <a href="#" class="site-list__link site-list--icone-search">
               <svg version="1.1" class="site-list__search" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.6px" height="17.6px" viewBox="-0.8 -0.8 17.6 17.6" enable-background="new -0.8 -0.8 17.6 17.6" xml:space="preserve">
@@ -102,7 +107,11 @@
             </table>
           </div>
           <div class="product-week__wrapper-image">
-            <img class="product-week__image" src="img/triple-set-mobile@1x.jpg" alt="Фото товара">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+              <img class="product-week__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Фото товара">
+            </picture>
           </div>
           <div class="product-week__text-price">
             <p class="product-week__text">Цена: <span class="product-week__price">990 руб.</span></p>
@@ -112,24 +121,24 @@
       </section>
       <section class="about-us">
         <h2 class="about-us__title">Коротко о нас:</h2>
-        <ul class="about-us__list @@about-us__list-wrap">
+        <ul class="about-us__list about-us__list-wrap">
           <li class="about-us__items">
-            <p class="about-us__description about-us__description--materials">Экологически<br> чистые материалы</p>
+            <p class="about-us__description about-us__description--materials">Экологически чистые&nbsp;материалы</p>
           </li>
           <li class="about-us__items">
-            <p class="about-us__description about-us__description--price">Скандинавский стиль<br> по российской цене</p>
+            <p class="about-us__description about-us__description--price">Скандинавский стиль по&nbsp;российской цене</p>
           </li>
           <li class="about-us__items">
-            <p class="about-us__description about-us__description--like">Увеличивает лайки<br> на фотографиях</p>
+            <p class="about-us__description about-us__description--like">Увеличивает лайки на&nbsp;фотографиях</p>
           </li>
           <li class="about-us__items">
-            <p class="about-us__description about-us__description--handwork">Связано вручную с<br> любовью и умилением</p>
+            <p class="about-us__description about-us__description--handwork">Связано вручную с любовью&nbsp;и&nbsp;умилением</p>
           </li>
           <li class="about-us__items">
-            <p class="about-us__description about-us__description--aid">Поддержка отечественного<br> производителя</p>
+            <p class="about-us__description about-us__description--aid">Поддержка отечественного производителя</p>
           </li>
           <li class="about-us__items">
-            <p class="about-us__description about-us__description--box">Поставляется в<br> подарочной упаковке</p>
+            <p class="about-us__description about-us__description--box">Поставляется в подарочной&nbsp;упаковке</p>
           </li>
         </ul>
       </section>
@@ -163,7 +172,13 @@
           </ul>
         </div>
         <div class="contacts__map">
-          <img src="img/map-mobile@1x.jpg" class="contacts__map-image" alt="Карта">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1556186927310!5m2!1sru!2sru" allowfullscreen></iframe>
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+              <img src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Карта" class="contacts__map-image"  alt="Карта">
+          </picture>
+
         </div>
         <a href="#" class="contacts__write">НАпишите нам</a>
       </section>
