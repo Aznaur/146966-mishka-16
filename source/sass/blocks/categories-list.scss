@@ -104,7 +104,20 @@
   .categories-list__text {
     font-size: 20px;
     line-height: 30px;
-    margin: 30px 0;
+    margin: 27px 0 33px 0;
+  }
+
+  .categories-list__link {
+    padding-left: 35px;
+
+    &--interior::after {
+      top: 51%;
+    }
+
+    &--toys::after {
+      top: 51%;
+      right: 34px;
+    }
   }
 }
 
