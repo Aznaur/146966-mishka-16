@@ -11,6 +11,7 @@
   &--closed {
     display: none;
   }
+
   &--nojs {
     display: block;
   }
@@ -21,7 +22,7 @@
   padding-left: 30px;
   padding-right: 30px;
   box-shadow: inset 0 -1px 0 0 #e5e5e5;
-  width:100%;
+  width: 100%;
   padding-top: 26px;
   padding-bottom: 29px;
 
@@ -72,7 +73,7 @@
 
   .site-list__items {
     box-shadow: none;
-    width:auto;
+    width: auto;
     padding: 0;
   }
 
