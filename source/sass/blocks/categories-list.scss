@@ -38,7 +38,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    opacity: 0.2;
+    opacity: 0.5;
   }
 
   &:hover {
@@ -46,8 +46,12 @@
     box-shadow: 0 5px 0 0 #63d1bb;
   }
 
+  &:hover::after {
+    opacity: 0.7;
+  }
+
   &:active::after {
-    opacity: 0.1;
+    opacity: 0.3;
   }
 }
 
@@ -66,20 +70,20 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    opacity: 0.2;
+    opacity: 0.5;
   }
 
   &:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 0 0 #56c3b2;
+  }
 
-    &:active::after {
-      opacity: 0.1;
-    }
+  &:hover::after {
+    opacity: 0.7;
   }
 
   &:active::after {
-    opacity: 0.1;
+    opacity: 0.3;
   }
 }
 
