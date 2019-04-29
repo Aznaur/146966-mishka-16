@@ -28,3 +28,9 @@
 .size-form__checkbox-control:checked ~ .size-form__label {
   border: 2px solid #63d1bb;
 }
+
+@media (min-width: $table-width) {
+  .size-form__items {
+    width: 112px;
+  }
+}
