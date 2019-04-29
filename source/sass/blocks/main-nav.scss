@@ -30,25 +30,64 @@
 .main-nav__toggle {
   position: absolute;
   width: 20px;
+  height: 14px;
   display: block;
   right: 30px;
   top: 38px;
   margin-top: -8px;
   border: none;
   background-color: transparent;
+  background-image: url("../img/icon-menu-open.svg");
+  background-repeat: no-repeat;
+  background-position: center;
   padding: 0;
+}
 
-  &--closed {
-    display: block;
+.main-nav--opened {
+  position: absolute;
+  background-color: $background;
+  z-index: 1;
+
+  & .main-nav__item--site {
+    top: 239px;
   }
 
-  &--nojs {
-    display: none;
+  & .main-nav__item--catalog {
+    top: 81px;
+  }
+
+  & .main-nav__toggle {
+    width: 21px;
+    height: 20px;
+    background-image: url("../img/icon-menu-close.svg");
   }
 }
 
+.main-nav--closed .main-nav__item {
+  display: none;
+}
+
+.main-nav--closed .main-nav__toggle {
+  display: block;
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--nojs .main-nav__item {
+  display: block;
+}
+
+
+
 @media (min-width: $table-width) {
-  .main-nav__toggle {
+  .main-nav--opened {
+    position: static;
+    background-color: transparent;
+  }
+
+  .main-nav .main-nav__toggle {
     display: none;
   }
 
@@ -63,6 +102,10 @@
   .main-nav {
     padding: 0;
     justify-content: space-between;
+
+    & .main-nav__item {
+      display: flex;
+    }
   }
 }
 
