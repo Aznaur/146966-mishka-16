@@ -118,10 +118,37 @@ main-nav--nojs
           </div>
           <div class="product-week__text-price">
             <p class="product-week__text">Цена: <span class="product-week__price">990 руб.</span></p>
-            <a href="#" class="product-week__link">ЗАКАЗАТЬ</a>
+            <a href="#" class="product-week__link js-modal-button">ЗАКАЗАТЬ</a>
           </div>
         </div>
       </section>
+      <div class="modal-overlay">
+        <div class="modal-cart">
+          <div class="modal-cart__inner">
+            <h2 class="modal-cart__title">Добавить в корзину</h2>
+            <p class="modal-cart__paragraph">Выберите размер:</p>
+            <form action="https://echo.htmlacademy.ru" method="post" class="size-form">
+              <ul class="size-form__list">
+                <li class="size-form__items">
+                  <input type="checkbox" name="small" id="small-field" class="size-form__checkbox-control visually-hidden" checked>
+                  <label for="small-field" class="size-form__label">S</label>
+                </li>
+                <li class="size-form__items">
+                  <input type="checkbox" name="medium" id="medium-field" class="size-form__checkbox-control visually-hidden">
+                  <label for="medium-field" class="size-form__label">M</label>
+                </li>
+                <li class="size-form__items">
+                  <input type="checkbox" name="large" id="large-field" class="size-form__checkbox-control visually-hidden">
+                  <label for="large-field" class="size-form__label">L</label>
+                </li>
+              </ul>
+              <div class="modal-cart__button-wrapper">
+                <button class="modal-cart__button" type="submit">Добавить</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
       <section class="about-us">
         <h2 class="about-us__title">Коротко о нас:</h2>
         <ul class="about-us__list about-us__list-wrap">
@@ -253,6 +280,6 @@ main-nav--nojs
         </div>
       </footer>
     </main>
-
+    <script src="js/modal.js"></script>
   </body>
 </html>
