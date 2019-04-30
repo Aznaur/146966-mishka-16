@@ -48,6 +48,7 @@
   margin: 0;
   margin-top: 5px;
   font-weight: normal;
+  color: #444444;
 }
 
 .card__wrapper-text {
@@ -55,15 +56,13 @@
 }
 
 .card__add-cart svg {
-  & path {
-    fill: rgba(0, 0, 0, 0.2);
-  }
+  fill: rgba(0, 0, 0, 0.2);
 
-  &:hover path {
+  &:hover {
     fill: rgba(99, 209, 187, 1);
   }
 
-  &:active path {
+  &:active {
     fill: rgba(99, 209, 187, 0.3);
   }
 }

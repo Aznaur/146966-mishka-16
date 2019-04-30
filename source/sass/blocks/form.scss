@@ -123,9 +123,10 @@
   background-color: transparent;
   width: 100%;
   min-height: 52px;
-  border: 2px solid black;
+  border: 2px solid #444444;
   font-weight: bold;
   box-sizing: border-box;
+  color: #444444;
 
   &:hover {
     background-color: #444444;

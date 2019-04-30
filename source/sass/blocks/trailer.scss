@@ -83,6 +83,7 @@
   font-weight: normal;
   margin: 0;
   padding: 0;
+  color: #444444;
 }
 
 .trailer__link-order {
@@ -90,13 +91,13 @@
   display: block;
   text-transform: uppercase;
   text-decoration: none;
-  color: #000000;
+  color: #444444;
   font-size: 18px;
   line-height: 20px;
   box-sizing: border-box;
   padding: 14px 14px;
   text-align: center;
-  border: 2px solid black;
+  border: 2px solid #444444;
   margin-top: 25px;
 
   &:hover {
@@ -220,5 +221,9 @@
     font-size: 17px;
     line-height: 16px;
     padding: 16px 16px;
+  }
+
+  .trailer__text {
+    width: 222px;
   }
 }
