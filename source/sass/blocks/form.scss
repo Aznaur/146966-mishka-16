@@ -218,20 +218,10 @@
       fill: #62d1ba;
       opacity: 1;
     }
-
-    & ~ svg {
-      fill: #62d1ba;
-      opacity: 1;
-    }
   }
 
   &:focus {
     border-color: #62d1ba;
-
-    & ~ svg {
-      fill: #62d1ba;
-      opacity: 1;
-    }
 
     & ~ svg {
       fill: #62d1ba;
