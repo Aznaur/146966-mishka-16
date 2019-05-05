@@ -219,7 +219,7 @@
       opacity: 1;
     }
 
-    & ~ svg path {
+    & ~ svg {
       fill: #62d1ba;
       opacity: 1;
     }
@@ -233,7 +233,7 @@
       opacity: 1;
     }
 
-    & ~ svg path {
+    & ~ svg {
       fill: #62d1ba;
       opacity: 1;
     }
@@ -260,6 +260,7 @@
   font-weight: normal;
   margin: 0;
   margin-bottom: 31px;
+  color: #444444;
 }
 
 @media (min-width: $table-width) {

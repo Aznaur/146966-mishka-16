@@ -118,7 +118,7 @@
 
 @media (min-width: $desktop-width) {
   .card {
-    flex-wrap: wrap;
+    flex-direction: column;
     width: 315px;
     margin-bottom: 0;
     margin-right: 52px;
@@ -139,6 +139,7 @@
 
   .card__description {
     width: 100%;
+    flex-grow: 1;
   }
 
   .card__wrapper-price {

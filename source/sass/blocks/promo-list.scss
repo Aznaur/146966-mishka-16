@@ -55,14 +55,8 @@
     font-size: 15px;
   }
 
-  .promo {
-    margin-left: calc(100% - 604px);
-    flex-grow: 1;
-    display: flex;
-    justify-content: flex-end;
-  }
-
   .promo-list__items:last-of-type {
     margin-right: 0;
+    margin-left: auto;
   }
 }

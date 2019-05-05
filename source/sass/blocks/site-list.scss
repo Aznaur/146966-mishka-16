@@ -85,7 +85,7 @@
     padding: 37px 30px 28px 34px;
   }
 
-  .site-list--icone-search {
+  .site-list__link--icone-search {
     font-size: 0;
     display: flex;
 
@@ -104,7 +104,7 @@
     }
   }
 
-  .site-list--icone-basket {
+  .site-list__link--icone-basket {
     display: flex;
     font-size: 17px;
     color: $color;

@@ -24,6 +24,7 @@ gulp.task("css", function () {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(gulp.dest("build/css"))
     .pipe(csso())
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
@@ -45,7 +46,7 @@ gulp.task("webp", function () {
   .pipe(gulp.dest("source/img"));
 });
 gulp.task("sprite", function () {
-  return gulp.src("source/img/icon-*.svg")
+  return gulp.src("source/img/*.svg")
   .pipe(svgstore({
     inlineSvg: true
   }))
@@ -64,7 +65,7 @@ gulp.task("clean", function () {
 });
 gulp.task("copy", function () {
   return gulp.src ([
-    "source/fonts/**/*.{woff, woff2}",
+    "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
     "source/js/**",
     "source/*.ico"

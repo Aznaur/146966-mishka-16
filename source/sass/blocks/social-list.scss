@@ -1,5 +1,6 @@
 .social-list {
   display: flex;
+  flex-wrap: wrap;
   width: 260px;
   margin: 0 auto;
   padding-top: 6px;
@@ -11,6 +12,15 @@
   list-style: none;
   border-bottom: 1px solid #e5e5e5;
   box-sizing: border-box;
+}
+
+.social-list__items {
+  padding-right: 5px;
+  padding-bottom: 5px;
+
+  &:last-of-type {
+    padding-right: 0;
+  }
 }
 
 .social-list__link {

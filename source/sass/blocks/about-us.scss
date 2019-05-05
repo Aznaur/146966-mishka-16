@@ -18,6 +18,7 @@
 }
 
 .about-us__description {
+  position: relative;
   margin: 0;
   padding: 0;
   line-height: 20px;
@@ -28,12 +29,11 @@
     position: absolute;
     width: 32px;
     height: 37px;
-    top: 30px;
+    top: -53px;
     left: 8px;
     background-image: url("../img/icon-feature-flower.svg");
     background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+    z-index: 20;
   }
 
   &--price::before {
@@ -41,24 +41,22 @@
     position: absolute;
     width: 47px;
     height: 27px;
-    top: 30px;
+    top: -50px;
     background-image: url("../img/icon-feature-money.svg");
     background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+    z-index: 20;
   }
 
   &--like::before {
     content: "";
     position: absolute;
     width: 34px;
-    height: 28px;
-    top: 34px;
-    left: 7px;
+    height: 30px;
+    top: -46px;
+    left: 8px;
     background-image: url("../img/icon-feature-heart.svg");
     background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+    z-index: 20;
   }
 
   &--handwork::before {
@@ -66,12 +64,11 @@
     position: absolute;
     width: 35px;
     height: 34px;
-    top: 33px;
+    top: -50px;
     left: 3px;
     background-image: url("../img/icon-feature-ball.svg");
     background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+    z-index: 20;
   }
 
   &--aid::before {
@@ -79,12 +76,11 @@
     position: absolute;
     width: 55px;
     height: 23px;
-    top: 34px;
+    top: -48px;
     left: -6px;
     background-image: url("../img/icon-feature-rocket.svg");
     background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+    z-index: 20;
   }
 
   &--box::before {
@@ -92,12 +88,11 @@
     position: absolute;
     width: 33px;
     height: 32px;
-    top: 32px;
+    top: -50px;
     left: 3px;
     background-image: url("../img/icon-feature-gift.svg");
     background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+    z-index: 20;
   }
 }
 
