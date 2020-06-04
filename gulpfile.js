@@ -15,6 +15,8 @@ var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
 var server = require("browser-sync").create();
+const ghPages = require('gh-pages');
+const path = require('path');
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -101,4 +103,10 @@ gulp.task("build", gulp.series(
   "sprite",
   "html"
 ));
+
+function deploy(cb) {
+  ghPages.publish(path.join(process.cwd(), './build'), cb);
+}
+exports.deploy = deploy;
+
 gulp.task("start", gulp.series("build", "server"));
